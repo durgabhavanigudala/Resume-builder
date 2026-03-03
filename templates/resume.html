@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: Helvetica, Arial, sans-serif; }
+        .header { text-align: center; border-bottom: 2px solid #007bff; padding-bottom: 10px; }
+        .section { margin-top: 20px; }
+        .section-title { font-weight: bold; color: #007bff; text-transform: uppercase; }
+        .content { margin-top: 5px; line-height: 1.6; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>{{ data.name }}</h1>
+        <p>{{ data.email }}</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Professional Experience</div>
+        <div class="content">{{ data.experience }}</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Skills</div>
+        <div class="content">{{ data.skills }}</div>
+    </div>
+</body>
+</html>
